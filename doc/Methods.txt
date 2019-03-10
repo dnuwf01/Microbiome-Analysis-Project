@@ -1,0 +1,47 @@
+ANALYSIS METHODS USED
+
+
+## SELECTING SAMPLES FOR AMKAJ MICROBIOME ANALYSIS
+
+Step 1 : Draw a histogram of sequence counts for all the taxa. Remove taxa with lowest sequence counts.
+Step 2 : Delete Taxa with zero reads.
+Step 3 : Select top 45 genus level taxa that accounts for at least 0.1% of taxa across all observations and add
+         in the putative pathogens that aren't in the top 45.(i.e. Chlamydia,Neisseria, Treponema)
+Step 4 : Select top 10 taxa from the final selected based on relative abundance and classify the rest as 'OTHER'.
+
+
+## EXPLORATORY ANALYSIS (tt : top ten)
+
+1. Compare RA for tt taxa for MSM and MSW.
+2. Check correlation between taxa for MSM and MSW(Spearman-Correlation)
+3. Check correlation between cytokines for MSM and MSW(Spearman Correlation)
+
+## DATA TRANSFORMATION  
+1. The genus level taxa data is transformed using centered log-ratio transformation (Compositional data).
+2. Cytokine data is log transformed.
+
+## CYTOKINE COMPARISON MSM AND MSW
+1. The cytokines of MSM and MSW are compared using Wilcoxon Rank Sum Test (non-parametric t-test)
+
+## STATUS vs BACTERIAL COMPOSITION
+1. Random Forest and Logistic Regression is used to predict status of an individual regressing against bacterial compositon.
+
+## BACTERIAL COMPOSITION VS CYTOKINES
+1. Linear regression with bacterial composition as predictor and cytokines as outcome.
+
+## VARIABLE/MODEL SELECTION
+1. Forward Selection  -- 
+
+## MULTIPLE TESTING CORRECTION
+1. False Discovery Rate -- 
+
+
+
+
+
+
+
+
+
+
+
