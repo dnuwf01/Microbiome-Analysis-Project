@@ -1,0 +1,60 @@
+Meeting 11/9
+
+1. Remove all features withr 0 sequence reads.
+2. Also remove ones with less than 0.1% total of the sum!
+3. Include back the important ones.
+4. Overlay histogram to see interaction.
+5. STacked bar chart of important features.
+6. Heatmap correlaton within msm and msw
+7. Feature level descriptive analysis, mean, median.
+8. is there any particular bacteria, that contributes to the model.
+
+Use msm or msw as the outcome, and we can try different models to fit. 
+
+
+Paired correlation.
+
+
+
+
+Meeting 11/16
+
+Look for all comparable variables in the two sets // completed the diagrams
+pca for the feature importance // done
+regression techniques to find out feature importance
+lefsie method // not done
+also explore machine learning methods for feature analysis.
+complete all the plts // wait
+heatmap spearman    // left to complete
+complete the taxa as is in rachel's document. //done
+Use msm or msw as the outcome, and we can try different models to fit. //done
+
+
+meeting 11/30
+
+1. change the distplot in relative abundance
+2. all the machine learning.
+--------------
+Update:
+Correlation map changed based on relative abundance(still need to do it in R)
+All the machine learning algorithms have been applied on the rel_abundance data
+
+
+Research questions and techniques used?
+
+1. Relative abundance -- because individuals have varying sequence counts, relative proportion is always helpful.
+2. Centered log ratio(taxa) -- is used to separate out and reduce collinearity between the taxa (check for multicollinearity)
+3. non-parametric method(we are not assuming normality) - spearman correlation.
+4. Predict msm/msw based on the taxa (rf,lr,nb,also use elastic net)
+5. for the outcome variables check spearman correlation.
+5.5 Log transform the cytokines but report the normal values.
+6. MSM/MSW difference in outcome variables using non-parametric wilcoxon rank sum test.
+7 Regress separately for all of them.(check for normality of error-- normality test)
+8. multiple testing (false discovery)
+---------------------------------------------------------------------------------------
+Other ideas:
+1. Stratify msm and msw and then regress against each of the cytokines.
+2. Draw a random forest MSM/MSW taxa importance vs Linear Regression taxa importance using that graph!
+
+
+
