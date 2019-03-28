@@ -58,3 +58,14 @@ Other ideas:
 
 
 
+
+3/27/19
+
+1. Use all taxa:  use rf to get gini index.
+2. repeat this using elastic net.
+3. regression  bacteria cytokines.
+4. add status : same regression : use aic for model selection.
+5. go for interaction
+
+
+
